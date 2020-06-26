@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern>rating is ^</pattern>
+    <template>
+    ,where rating is
+ <map name="rating_map"> <star/> </map>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>rating is ^</pattern>
+    <template>
+    ,where product rating is <star/>
+    </template>
+</category>
+
+<category>
+    <pattern>discount is ^</pattern>
+    <template>
+    ,where discounted price is <first><star/></first>
+    </template>
+</category>
+
+
+<category>
+    <pattern>discount of ^</pattern>
+    <template>
+    ,where discounted price is <first><star/></first>
+    </template>
+</category>
+
+<category>
+    <pattern> price is ^</pattern>
+    <template>
+    ,where retail price is <star/>
+    </template>
+</category>
+
+<category>
+    <pattern> of brand ^</pattern>
+    <template>
+    ,where brand is <star/>
+    </template>
+</category>
+
+
+<category>
+    <pattern> brand is ^</pattern>
+    <template>
+    ,where brand is <star/>
+    </template>
+</category>
+
+
+<category>
+    <pattern>retail price is between ^ and ^</pattern>
+    <template>
+     ,retail price is more than <first><star index="1"/></first> and retail price is less than <first><star index="2"/></first>
+    </template>
+</category>
+
+
+<category>
+    <pattern>discount is between ^ and ^</pattern>
+    <template>
+     ,discounted price is more than <first><star index="1"/></first> and retail price is less than <first><star index="2"/></first>
+    </template>
+</category>
+
+
+<category>
+    <pattern>in brand ^</pattern>
+    <template>
+    ,where brand is <first><star/></first>
+    </template>
+</category>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+
+<category>
+    <pattern>what rating  ^</pattern>
+    <template>
+    what is the product rating <star/>
+    </template>
+
+</category>
+
+
+
+<!--  -->
+<!--  -->
+<!--  -->
+<category>
+    <pattern>price less or greater *</pattern>
+    <template>
+    ,where retail price is
+ <map name="less_greater_map"> <star/> </map>
+    </template>
+</category>
+
+<category>
+    <pattern>discount less or greater *</pattern>
+    <template>
+    ,where discounted price is
+ <map name="less_greater_map"> <star/> </map>
+    </template>
+</category>
+
+
+
+
+
+</aiml>

@@ -1,0 +1,13 @@
+male
+men
+gents
+boys
+guys
+female
+women
+ladies
+girls
+gals
+male
+men's
+women's

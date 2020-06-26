@@ -1,0 +1,14 @@
+below:less than
+lower:less than
+lower than:less than
+lesser:less than
+lesser than:less than
+smaller:less than
+smaller than:less than
+above:more than
+higher:more than
+higher than:more than
+greater:more than
+greater than:more than
+bigger:more than
+bigger than:more than

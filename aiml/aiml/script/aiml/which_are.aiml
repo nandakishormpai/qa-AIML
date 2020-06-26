@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <category>
+        <pattern>^ <set name="which"/>  ^</pattern>
+        <template>,in products</template>
+    </category>
+
+ <category>
+        <pattern>name <set name="name"/> ^</pattern>
+        <template>select name</template>
+    </category>
+
+<category>
+    <pattern># <set name="name"/> ^ <set name="brand"/> ^</pattern>
+    <template>
+    <srai>name is<star index="2"/></srai>
+    <srai> <star index="1"/> </srai>
+    <srai>brand is <star index="4"/></srai>
+    ,<star index="5"/>
+    </template>
+</category>
+
+
+<category>
+    <pattern># <set name="name"/> ^ <set name="brand"/> ^<set name="less_and_greater"/> ^ PRICE ^</pattern>
+    <template>
+    <srai>name is<star index="2"/></srai>
+    <srai> <star index="1"/> </srai>
+    <srai>gender is <star index="4"/></srai>
+    <srai>retail price less or greater <star index="6"/></srai> <star index="8"/>    
+    </template>
+</category>
+
+<category>
+    <pattern># <set name="cancer_kwds"/> ^ <set name="rating"/> ^</pattern>
+    <template>
+    <srai>cancer kwd<star index="2"/></srai>
+    <srai> <star index="1"/> </srai>
+    <srai>product rating is <star index="4"/></srai>  
+    <srai> <star index="5"/> </srai>
+    </template>
+</category>
+
+
+
+<!-- 
+
+<category>
+    <pattern># <set name="cancer_kwds"/> ^ most <iset words="death,dead"/> ^</pattern>
+    <template>
+    <srai>which are <star index="2"/></srai>
+    <srai> <star index="1"/> </srai>
+    <srai>gender is <star index="4"/></srai>
+    ,<star index="5"/>
+    </template>
+</category> -->
+
+</aiml>

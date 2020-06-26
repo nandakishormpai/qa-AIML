@@ -1,0 +1,24 @@
+<aiml version="1.0">
+
+<category>
+<pattern>LOAD ALICE</pattern>
+<template>
+
+<!-- Load ALICE AIML set -->
+<learn>*.aiml</learn>
+
+</template>
+</category>
+
+
+<category>
+<pattern>LOAD HEALTHQ</pattern>
+<template>
+
+<!-- Load ALICE AIML set -->
+<learn>healthq*.aiml</learn>
+
+</template>
+</category>
+
+</aiml>

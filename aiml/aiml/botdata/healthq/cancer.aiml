@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+
+
+
+
+<!-- YEAR -->
+
+<category>
+<pattern>WHAT YEAR HAD THE MOST *</pattern>
+<template>ARGMAX(<srai><star/></srai>,"year")</template>
+</category>
+
+<category>
+<pattern>WHICH YEAR HAD THE MOST NUMBER OF*</pattern>
+<template>ARGMAX(<srai><star/></srai>,"year")</template>
+</category>
+
+<category>
+<pattern>WHICH YEAR HAD THE MAXIMUM *</pattern>
+<template>ARGMAX(<srai><star/></srai>,"year")</template>
+</category>
+
+<category>
+<pattern>WHICH YEAR HAD THE MAXIMUM NUMBER OF *</pattern>
+<template>ARGMAX(<srai><star/></srai>,"year")</template>
+</category>
+
+<category>
+<pattern>WHICH YEAR HAD THE LEAST *</pattern>
+<template>ARGMIN(<srai><star/></srai>,"year")</template>
+</category>
+
+<category>
+<pattern>WHICH YEAR HAD THE LEAST NUMBER OF *</pattern>
+<template>ARGMIN(<srai><star/></srai>,"year")</template>
+</category>
+
+<category>
+<pattern>WHICH YEAR HAD THE MINIMUM NUMBER OF *</pattern>
+<template>ARGMIN(<srai><star/></srai>,"year")</template>
+</category>
+
+
+<!--FILTER-->
+
+<category>
+<pattern>FEMALES WITH * CANCER *</pattern>
+<template>FILTER(<srai><star index="1"/> CANCER</srai>, lambda row: COMP(row["gender"], "female"))</template>
+</category>
+
+<category>
+<pattern>FEMALES WITH * CANCER</pattern>
+<template>FILTER(<srai><star index="1"/> CANCER</srai>, lambda row: COMP(row["gender"], "female"))</template>
+</category>
+
+<category>
+<pattern>* CANCER</pattern>
+<template>FILTER(data, lambda row: COMP(row["site"], "<star index="1"/>"))</template>
+</category>
+<!--Misc-->
+
+
+
+<category>
+<pattern>WHAT IS THE * OF *</pattern>
+<template>
+<srai><star index="1"/> OF <star index="2"/></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>HOW MANY *</pattern>
+<template>
+<srai>COUNT <star index="1"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>NUMBER OF *</pattern>
+<template>
+<srai>COUNT <star index="1"/></srai>
+</template>
+</category>
+<category>
+<pattern>COUNT *</pattern>
+<template>COUNT(<star/>)</template>
+</category>
+
+<category>
+<pattern>AVERAGE OF *</pattern>
+<template>
+<srai>AVG <star index="1"/></srai>
+</template>
+</category>
+<category>
+<pattern>AVG *</pattern>
+<template>AVG(<star/>)</template>
+</category>
+
+<category>
+<pattern>AVERAGE NUMBER OF *</pattern>
+<template>
+<srai>AVG <star index="1"/></srai>
+</template>
+</category>
+<category>
+<pattern>AVG *</pattern>
+<template>AVG(<star/>)</template>
+</category>
+</aiml>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+     <category>
+        <pattern>^ <set name="how many"/> </pattern>
+        <template>what is the count of name in products </template>
+    </category>
+
+<category>
+    <pattern>^ <set name="name" />^ RATING ^</pattern>
+    <template>
+		<srai><star index="1"/></srai>
+        <srai>name is <star index="2"/></srai>
+        ,<star index="4"/>    
+    </template>
+</category>
+
+
+<category>
+    <pattern>#<set name="brand" /> ^ PRICE BETWEEN ^ AND ^  RATING ^ <set name="rating" /></pattern>
+    <template>
+    <srai><star index="1"/></srai>
+    <srai>brand is <star index="2"/></srai>
+    <srai><star index="3"/>retail price is between <star index="4"/> and <star index="5"/></srai>
+    <srai>product rating is <star index="8"/></srai>
+    </template>
+</category>
+
+<category>
+    <pattern>^ <set name="name" /> ^ DISCOUNT BETWEEN ^ AND ^ RATING ^</pattern>
+    <template>
+    <srai><star index="1"/></srai>
+    <srai>name is <star index="2"/></srai>
+    <srai>discounted price is between <star index="4"/> and <star index="5"/></srai>
+    ,<star index="6"/>
+    </template>
+</category>
+
+
+<category>
+    <pattern>^ <set name="name" /> ^ <set name="brand"/> ^ PRICE BETWEEN ^ AND ^ RATING ^</pattern>
+    <template>
+    <srai><star index="1"/> </srai>
+    <srai>name is <star index="2"/></srai>
+    <srai>brand is <star index="4"/></srai>
+    <srai>retail price is between <star index="6"/> and<star index="7"/></srai>
+    ,<star index="8"/>
+    </template>
+</category>
+
+<category>
+    <pattern>^ <set name="name" /> ^ <set name="brand"/> ^ DISCOUNT BETWEEN ^ AND ^ RATING ^</pattern>
+    <template>
+    <srai><star index="1"/> </srai>
+    <srai>name is <star index="2"/></srai>
+    <srai>brand is <star index="4"/></srai>
+    <srai>discounted price is between <star index="6"/> and<star index="7"/></srai>
+    ,<star index="8"/>
+    </template>
+</category>
+
+
+<category>
+    <pattern>^ <set name="name" /> ^ <set name="brand"/> ^ PRICE BETWEEN ^ AND ^<set name="rating"/> ^ CANCER ^</pattern>
+    <template>
+    
+    <srai><star index="1"/></srai>
+    <srai>name is <star index="2"/></srai>
+    <srai>gender is <star index="4"/></srai>
+    <srai>retail price is between <star index="6"/> and <star index="7"/></srai>
+    <srai>product rating is <star index="8"/></srai>
+    ,<star index="10"/>
+    </template>
+</category>
+
+<category>
+    <pattern>^ <set name="name" /> ^ <set name="brand"/> ^ DISCOUNT BETWEEN ^ AND ^<set name="rating"/> ^ CANCER ^</pattern>
+    <template>
+    
+    <srai><star index="1"/></srai>
+    <srai>name is <star index="2"/></srai>
+    <srai>gender is <star index="4"/></srai>
+    <srai>discounted price is between <star index="6"/> and <star index="7"/></srai>
+    <srai>product rating is <star index="8"/></srai>
+    ,<star index="10"/>
+    </template>
+</category>
+
+<category>
+    <pattern>^ <set name="brand" /> ^ PRICE BETWEEN ^ AND ^ ^</pattern>
+    <template>
+    <srai><star index="1"/></srai>
+    <srai>brand is <star index="2"/></srai>
+    <srai><star index="3"/>retail price is between <star index="4"/> and <star index="5"/></srai>
+    <srai>,<star index="6"/></srai>
+    </template>
+</category>
+
+<category>
+    <pattern>^ <set name="brand" /> ^ PRICE BETWEEN ^ AND ^<set name="brand"/> ^ RATING ^ <set name="rating"/> ^</pattern>
+    <template>
+    <srai><star index="1"/></srai>
+    <srai>nationalit is <star index="2"/></srai>
+    <srai>retail price is between <star index="4"/> and <star index="5"/></srai>
+    <srai>brand is <star index="6"/></srai>
+    <srai>product rating is <star index="9"/></srai>
+    <srai><star index="10"/></srai>
+    </template>
+</category> 
+
+<category>
+    <pattern>^ <set name="Nationality" />^ <set name="genders"/> ^ BETWEEN AGE ^ AND ^<set name="Cancer_site"/> ^ CANCER ^ YEAR ^</pattern>
+    <template>
+    <srai><star index="1"/></srai>
+    <srai>nationality is <star index="2"/></srai>
+    <srai>gender is <star index="4"/></srai>
+    <srai>age group is between <star index="6"/> and <star index="7"/></srai>
+    <srai>cancer location is <star index="8"/></srai>
+    <srai>in year <star index="11"/></srai>
+    </template>
+</category> 
+
+
+
+
+<category>
+    <pattern>^ <set name="name" /> ^</pattern>
+    <template>
+		<srai><star index="1"/></srai> 
+        <srai> name is <star index="2"/></srai>
+        ,<star index="3"/>
+    </template>
+</category>
+
+
+<category>
+    <pattern>^ <set name="name"/> ^ <set name="brand" /> ^</pattern> 
+    <template>
+    <srai><star index="1"/></srai> 
+    <srai>name is <star index="2"/></srai>
+    <srai>brand is <star index="4"/> </srai>
+    ,<star index="5"/>
+    </template>
+</category>
+
+</aiml>

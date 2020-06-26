@@ -1,0 +1,10 @@
+five:5
+full:5
+great:5
+fantastic:5
+best:5
+nice:5
+1:No rating available
+4:No rating available
+2:No rating available
+3:No rating available
