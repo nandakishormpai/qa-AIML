@@ -20,16 +20,9 @@ print("filepath=",filepath,files['aiml'])
 
 my_bot =EmbeddedDataFileBot(files,defaults=True)
 
-questions=["get all rating of SWAGGA Women Clogs by dongli thing,WHERE CATEGORY IS pet_supplies_toys",
-   "how many Expatriate ladies between age 40 and 44 have Stomach Cancer in year 2011",
-   "how many National between age 40 and 44 have Breast Cancer in year 2013",
-   "Which is the type of cancer that cause the death of men below age 40",
-   "What all are the type of cancer that cause death in year 2016",
-   "how many men with Oesophagus cancer died in year 2018",
-   "how many women with Colorectum  cancer died in year 2011",
-   "how many women with Oesophagus cancer died in year 2013",
-   "how many national men with Oesophagus cancer died in year 2018",
-   "how many expatriate men with Oesophagus cancer died in year 2018"]
+questions=["i need names of tools for gardening and hardware with a 4 star rating where category is pet_supplies_toys",
+   "search for all labels that sell shirts of brand Alisha and has stripes suitable for party where category is pet_supplies_toys ",
+   "what are the companies that sell shirts where name Style Foot Bellies and has stripes suitable for party of Alisha WHERE CATEGORY IS pet_supplies_toys "]
 
 for i,question in enumerate(questions):
     print(str(i+1)+")Response = %s" % my_bot.ask_question(question))

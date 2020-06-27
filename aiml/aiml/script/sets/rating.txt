@@ -1,2 +1,10 @@
 5
 No rating available
+1
+2
+3
+4
+good
+bad
+full
+best

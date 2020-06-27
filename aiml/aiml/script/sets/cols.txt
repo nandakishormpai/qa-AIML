@@ -3,3 +3,18 @@ price
 discount
 rating
 brand
+rating
+ratings
+stars
+products rating
+names
+labels
+title
+cost
+price
+money
+discount
+discounts
+company
+brands
+companies

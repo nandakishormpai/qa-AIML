@@ -1,6 +1,6 @@
-five:5
+best:5
 full:5
-great:5
+good:5
 fantastic:5
 best:5
 nice:5
@@ -8,3 +8,4 @@ nice:5
 4:No rating available
 2:No rating available
 3:No rating available
+bad:No rating available

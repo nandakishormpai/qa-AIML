@@ -14,3 +14,6 @@ find all
 get all
 search for all
 which
+give me
+list all
+i need

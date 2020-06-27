@@ -5,23 +5,47 @@
         <template>,in products</template>
     </category>!-->
 
- <category>
-        <pattern>name <set name="name"/> ^</pattern>
-        <template>select name</template>
-    </category>
 
- <category>
-        <pattern>brand <set name="brand"/> ^</pattern>
-        <template>select brand</template>
+<category>
+        <pattern><set name="which"/> ^ <set name="cols"/>^ <set name="name"/> ^ where category is <set name="category"/> ^ </pattern>
+        <template>what are the <map name="cols_map"> <star index="3"/> </map> in products
+        <srai> name is <star index="5"/> </srai>
+        ,where category is <star index="7"/> ? </template>
     </category>
 
 <category>
-    <pattern><set name="which"/> <set name="cols"/> ^ <set name="name"/> ^ <set name="brand"/> ^ WHERE CATEGORY IS <set name="category"/> ^ </pattern>
+        <pattern><set name="which"/> ^ <set name="cols"/>^ <set name="brand"/> ^ where category is <set name="category"/> ^ </pattern>
+        <template>what are the <map name="cols_map"> <star index="3"/> </map> in products
+        <srai> brand is <star index="5"/> </srai>
+        ,where category is <star index="7"/> ? </template>
+    </category>
+<category>
+        <pattern><set name="which"/> ^ <set name="cols"/>^ <set name="rating"/> ^ where category is <set name="category"/> ^ </pattern>
+        <template>what are the <map name="cols_map"> <star index="3"/> </map> in products
+        <srai> rating is <map name="rating_map"><star index="5"/> </map> </srai>
+        ,where category is <star index="7"/> ? </template>
+    </category>
+
+ <category>
+        <pattern><set name="which"/> ^ <set name="cols"/>^ <set name="name"/> ^ <set name="brand"/> ^ where category is <set name="category"/> ^ </pattern>
+        <template>what are the <map name="cols_map"> <star index="3"/> </map> in products
+        <srai> name is <star index="5"/> </srai>
+        <srai>brand is <star index="7"/> </srai>
+        ,where category is <star index="9"/> ? </template>
+    </category>
+
+ <category>
+        <pattern>^ <set name="name"/> ^</pattern>
+        <template><star index="1"/>select brand <star index="2"/> <star index="3"/> </template>
+    </category>
+
+<category> 
+    <pattern>^ <set name="brand"/> ^ WHERE CATEGORY IS ^ <set name="category"/></pattern>
     <template>
-    <star index="1"/> <star index="2"/> in products
-    <srai> name is<star index="4"/></srai>
-    <srai> brand is <star index="6"/></srai>,WHERE CATEGORY IS 
-    <star index="8"/> ?
+    <star index="1"/>in products
+    <srai> name is<star index="2"/></srai>
+    <srai> brand is <star index="4"/></srai>,WHERE CATEGORY IS 
+    <star index="7"/> ?
     </template>
 </category>
 

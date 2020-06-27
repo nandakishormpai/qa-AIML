@@ -1,0 +1,15 @@
+rating:product rating
+ratings:product rating
+stars:product rating
+products rating:product rating
+names:name
+labels:name
+title:name
+cost:retail price
+price:retail price
+money:retail price
+discount:discounted price
+discounts:discounted price
+company:brand
+brands:brand
+companies:brand
