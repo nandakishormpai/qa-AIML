@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-  <category>
+  <!--<category>
         <pattern>^ <set name="which"/>  ^</pattern>
         <template>,in products</template>
-    </category>
+    </category>!-->
 
  <category>
         <pattern>name <set name="name"/> ^</pattern>
         <template>select name</template>
     </category>
 
+ <category>
+        <pattern>brand <set name="brand"/> ^</pattern>
+        <template>select brand</template>
+    </category>
+
 <category>
-    <pattern># <set name="name"/> ^ <set name="brand"/> ^</pattern>
+    <pattern><set name="which"/> <set name="cols"/> ^ <set name="name"/> ^ <set name="brand"/> ^ WHERE CATEGORY IS <set name="category"/> ^ </pattern>
     <template>
-    <srai>name is<star index="2"/></srai>
-    <srai> <star index="1"/> </srai>
-    <srai>brand is <star index="4"/></srai>
-    ,<star index="5"/>
+    <star index="1"/> <star index="2"/> in products
+    <srai> name is<star index="4"/></srai>
+    <srai> brand is <star index="6"/></srai>,WHERE CATEGORY IS 
+    <star index="8"/> ?
     </template>
 </category>
 
 
-<category>
+<!--<category>
     <pattern># <set name="name"/> ^ <set name="brand"/> ^<set name="less_and_greater"/> ^ PRICE ^</pattern>
     <template>
     <srai>name is<star index="2"/></srai>
@@ -43,7 +48,7 @@
 
 
 
-<!-- 
+ 
 
 <category>
     <pattern># <set name="cancer_kwds"/> ^ most <iset words="death,dead"/> ^</pattern>

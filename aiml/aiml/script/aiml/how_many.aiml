@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 
-     <category>
+    <!--<category>
         <pattern>^ <set name="how many"/> </pattern>
         <template>what is the count of name in products </template>
     </category>
@@ -141,6 +141,6 @@
     <srai>brand is <star index="4"/> </srai>
     ,<star index="5"/>
     </template>
-</category>
+</category>!-->
 
 </aiml>

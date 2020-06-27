@@ -41,9 +41,9 @@
 </category>
 
 <category>
-    <pattern> of brand ^</pattern>
+    <pattern> name is ^</pattern>
     <template>
-    ,where brand is <star/>
+    ,where name is <star/>
     </template>
 </category>
 
