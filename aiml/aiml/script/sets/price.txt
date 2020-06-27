@@ -1,0 +1,8 @@
+cost
+price
+money
+discount
+discounts
+retail price
+discounted price
+costs

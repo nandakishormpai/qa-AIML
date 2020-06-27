@@ -12,3 +12,5 @@ greater:more than
 greater than:more than
 bigger:more than
 bigger than:more than
+more than:more than
+less than:less than

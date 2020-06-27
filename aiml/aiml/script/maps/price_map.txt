@@ -1,0 +1,8 @@
+cost:retail price
+price:retail price
+money:retail price
+discount:discounted price
+discounts:discounted price
+costs:retail price
+retail price:retail price
+discounted price:discounted price

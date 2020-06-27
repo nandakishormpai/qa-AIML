@@ -10,9 +10,23 @@
 </category>
 
 <category>
+    <pattern>category is ^</pattern>
+    <template>
+    ,where  category is <star/> ?
+    </template>
+</category>
+
+<category>
     <pattern>discount is ^</pattern>
     <template>
     ,where discounted price is <first><star/></first>
+    </template>
+</category>
+
+<category>
+    <pattern> ^ between ^ and ^ </pattern>
+    <template>
+    ,lower <map name="price_map"> <star index="1"/></map> is <star index="2"/> and upper <map name="price_map"> <star index="1"/></map> is <star index="3"/> 
     </template>
 </category>
 
@@ -47,26 +61,20 @@
 </category>
 
 
+
+
+
 <category>
-    <pattern>retail price is between ^ and ^</pattern>
+    <pattern>what are the ^ in products</pattern>
     <template>
-     ,retail price is more than <first><star index="1"/></first> and retail price is less than <first><star index="2"/></first>
+    what are the <map name="cols_map"> <star/> </map> in products
     </template>
 </category>
 
-
 <category>
-    <pattern>discount is between ^ and ^</pattern>
+    <pattern>^ price ^ is ^ </pattern>
     <template>
-     ,discounted price is more than <first><star index="1"/></first> and retail price is less than <first><star index="2"/></first>
-    </template>
-</category>
-
-
-<category>
-    <pattern>in brand ^</pattern>
-    <template>
-    ,where brand is <first><star/></first>
+    ,where <map name="price_map"> <star index="1"/></map> is <map name="less_greater_map"> <star index="2"/> </map> <star index="3"/>
     </template>
 </category>
 

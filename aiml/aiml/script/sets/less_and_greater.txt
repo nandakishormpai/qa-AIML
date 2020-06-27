@@ -12,3 +12,4 @@ greater
 greater than
 bigger
 bigger than
+more than
