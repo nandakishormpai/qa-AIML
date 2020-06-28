@@ -1,0 +1,44 @@
+// categories are jsut added to test the AIML and not related to the product mentioned.categories will be correct in the query in actual script//
+// our dataset contains only '5' and 'No rating available' as values of product rating, so i had to map 1,2,3,4 ratings as No rating Available//
+
+Q1 : i need names of tools for gardening and hardware with a rating of 4 star rating where category is pet_supplies_toys
+Response = What are the name in products,where product rating is No rating available,where category is pet_supplies_toys?
+
+Q2 : search for all labels that sell shirts of brand Alisha and has stripes suitable for party where category is furniture_living_room
+Response = What are the name in products,where brand is Alisha,where category is furniture_living_room?
+
+Q3 : what are the companies that sell shirts where name Style Foot Bellies and has stripes suitable for party of Alisha where category is asics_ge
+Response = What are the brand in products,where name is Style Foot Bellies,where brand is Alisha,where category is asics_ge?
+
+Q4 : list all the brands of baby products of good quality with a costs somewhere above 200 and where category is home_furnishing_bath_linen
+Response = What are the brand in products,where retail price is more than 200 and,where category is home_furnishing_bath_linen?
+
+Q5 : which all are the names of electronic items with great battery with a good discount higher than 500  where category is footwear_womens_footwear_ballerinas 
+Response = What are the name in products,where discounted price is more than 500,where category is footwear_womens_footwear_ballerinas?
+
+Q6 : why dont you get all companies who sell watch and batteries in a price range between 200 and 600 where category is jewellery_pendants_lockets
+Response = What are the brand in products,lower retail price is 200 and upper retail price is 600,where category is jewellery_pendants_lockets?
+
+Q7 : Please show me the names of food items of Alisha and costs below 400 where category is newgen_tech_e
+Response = What are the name in products,where brand is Alisha,where retail price is less than 400,where category is newgen_tech_e?
+
+Q8 : i need some brands that sell clothes for men that have a rating of 5 and discount above 300 where category is pet_supplies_toys
+Response = What are the brand in products,where product rating is 5,where discounted price is more than 300,where category is pet_supplies_toys?
+
+Q9 : what are the ratings of clothes suitable for sports and athletics of Kennel whose price ranges between 300 and 600 where category is asics_ge 
+Response = What are the product rating in products,where brand is Kennel,lower retail price is 300 and upper retail price is 600,where category is asics_ge?
+
+Q10 : which are the companies that sell good furnitures with rating near 3 and having a discount between 500 and 700 where category is home_furnishing_bath_linen
+Response = What are the brand in products,where product rating is No rating available,lower discounted price is 500 and upper discounted price is 700,where category is home_furnishing_bath_linen?
+
+Q11 : Please show me the names of food items that costs below 400 of Alisha where category is newgen_tech_e
+Response = What are the name in products,where retail price is less than 400 of,where brand is Alisha,where category is newgen_tech_e?
+
+Q12 : i need some brands that sell clothes for men that have a discount above 300  rating of 5 where category is pet_supplies_toys 
+Response = What are the brand in products,where discounted price is more than 300,where product rating is 5,where category is pet_supplies_toys?
+
+Q13 : what are the ratings of clothes suitable for sports and athletics in a price ranges between 300 and 600 of Kennel where category is asics_ge
+Response = What are the product rating in products,lower retail price is 300 and upper retail price is 600 of,where brand is Kennel,where category is asics_ge?
+
+Q14 : which are the companies that sell good furnitures with a discount between 500 and 700 with rating near 3 where category is home_furnishing_bath_linen
+Response = What are the brand in products,lower discounted price is 500 and upper discounted price is 700 with,where product rating is No rating available,where category is home_furnishing_bath_linen?

@@ -32,7 +32,7 @@ questions=["i need names of tools for gardening and hardware with a rating of 4 
    "which are the companies that sell good furnitures with rating near 3 and having a discount between 500 and 700 where category is home_furnishing_bath_linen",
    "Please show me the names of food items that costs below 400 of Alisha where category is newgen_tech_e ",
    "i need some brands that sell clothes for men that have a discount above 300  rating of 5 where category is pet_supplies_toys ",
-   "what are the ratings of clothes suitable for sports and athletics price ranges between 300 and 600 of Kennel whosewhere category is asics_ge",
+   "what are the ratings of clothes suitable for sports and athletics in a price ranges between 300 and 600 of Kennel where category is asics_ge",
    "which are the companies that sell good furnitures with a discount between 500 and 700 with rating near 3 where category is home_furnishing_bath_linen"]
 
 for i,question in enumerate(questions):
