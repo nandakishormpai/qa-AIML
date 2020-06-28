@@ -20,7 +20,7 @@
         <pattern> ^ <set name="which"/> ^ <set name="cols"/>^ rating ^ <set name="rating"/> ^ where category is <set name="category"/> ^ </pattern>
         <template>
         <srai>what are the <star index="4"/> in products</srai>
-        <srai> rating is <map name="rating_map"><star index="7"/> </map> </srai>
+        <srai> rating is <star index="7"/> </srai>
         <srai> category is <star index="9"/> </srai> </template>
     </category>
 
@@ -49,7 +49,112 @@
         <srai> category is <star index="10"/> </srai> </template>
 </category>
 
+<category>
+        <pattern> ^ <set name="which"/> ^ <set name="cols"/> ^ <set name="brand"/> ^ <set name="price"/> ^ <set name="less_and_greater"/> ^ where category is <set name="category"/> ^ </pattern>
+        <template>
+        <srai>what are the <star index="4"/> in products</srai>
+        <srai> brand is <star index="6"/> </srai>
+        <srai> <star index="8"/> price <star index="10"/> is <star index="11"/> </srai>
+        <srai> category is <star index="12"/> </srai> </template>
+    </category>
 
+<category>
+        <pattern> ^ <set name="which"/> ^ <set name="cols"/> ^ rating ^ <set name="rating"/> ^ <set name="price"/> ^ <set name="less_and_greater"/> ^ where category is <set name="category"/> ^ </pattern>
+        <template>
+        <srai>what are the <star index="4"/> in products</srai>
+        <srai> rating is <star index="7"/> </srai>
+        <srai> <star index="9"/> price <star index="11"/> is <star index="12"/> </srai>
+        <srai> category is <star index="13"/> </srai> </template>
+    </category>
 
+<category>
+        <pattern> ^ <set name="which"/> ^ <set name="cols"/> ^ <set name="name"/> ^ <set name="price"/> ^ <set name="less_and_greater"/> ^ where category is <set name="category"/> ^ </pattern>
+        <template>
+        <srai>what are the <star index="4"/> in products</srai>
+        <srai> name is <star index="6"/> </srai>
+        <srai> <star index="8"/> price <star index="10"/> is <star index="11"/> </srai>
+        <srai> category is <star index="12"/> </srai> </template>
+    </category>
+
+<category>
+        <pattern> ^ <set name="which"/> ^ <set name="cols"/> ^ <set name="brand"/> ^ <set name="price"/> ^ between ^ and ^ where category is <set name="category"/> ^ </pattern>
+        <template>
+        <srai>what are the <star index="4"/> in products</srai>
+        <srai> brand is <star index="6"/> </srai>
+        <srai> <star index="8"/> between <star index="10"/> and <star index="11"/> </srai>
+        <srai> category is <star index="12"/> </srai> </template>
+    </category>
+
+<category>
+        <pattern> ^ <set name="which"/> ^ <set name="cols"/> ^ <set name="name"/> ^ <set name="price"/> ^ between ^ and ^ where category is <set name="category"/> ^ </pattern>
+        <template>
+        <srai>what are the <star index="4"/> in products</srai>
+        <srai> name is <star index="6"/> </srai>
+        <srai> <star index="8"/> between <star index="10"/> and <star index="11"/> </srai>
+        <srai> category is <star index="12"/> </srai> </template>
+    </category>
+
+<category>
+        <pattern> ^ <set name="which"/> ^ <set name="cols"/> ^ rating ^ <set name="rating"/> ^ <set name="price"/> ^ between ^ and ^ where category is <set name="category"/> ^ </pattern>
+        <template>
+        <srai>what are the <star index="4"/> in products</srai>
+        <srai> rating is <star index="7"/> </srai>
+        <srai> <star index="9"/> between <star index="11"/> and <star index="12"/> </srai>
+        <srai> category is <star index="13"/> </srai> </template>
+    </category>
+
+<category>
+        <pattern> ^ <set name="which"/> ^ <set name="cols"/> ^ <set name="price"/> ^ <set name="less_and_greater"/> ^ <set name="brand"/> ^ where category is <set name="category"/> ^ </pattern>
+        <template>
+        <srai>what are the <star index="4"/> in products</srai>
+        <srai> <star index="6"/> price <star index="8"/> is <star index="9"/> </srai>
+        <srai> brand is <star index="10"/> </srai>
+        <srai> category is <star index="12"/> </srai> </template>
+    </category>
+
+<category>
+        <pattern> ^ <set name="which"/> ^ <set name="cols"/> ^ <set name="price"/> ^ <set name="less_and_greater"/> ^ rating ^ <set name="rating"/> ^ where category is <set name="category"/> ^ </pattern>
+        <template>
+        <srai>what are the <star index="4"/> in products</srai>
+        <srai> <star index="6"/> price <star index="8"/> is <star index="9"/> </srai>
+        <srai> rating is <star index="11"/> </srai>
+        <srai> category is <star index="13"/> </srai> </template>
+    </category>
+
+<category>
+        <pattern> ^ <set name="which"/> ^ <set name="cols"/> ^ <set name="price"/> ^ <set name="less_and_greater"/> ^ <set name="name"/> ^ where category is <set name="category"/> ^ </pattern>
+        <template>
+        <srai>what are the <star index="4"/> in products</srai>
+        <srai> <star index="6"/> price <star index="8"/> is <star index="9"/> </srai>
+        <srai> name is <star index="10"/> </srai>
+        <srai> category is <star index="12"/> </srai> </template>
+    </category>
+
+<category>
+        <pattern> ^ <set name="which"/> ^ <set name="cols"/> ^ <set name="price"/> ^ between ^ and  ^ <set name="brand"/> ^ where category is <set name="category"/> ^ </pattern>
+        <template>
+        <srai>what are the <star index="4"/> in products</srai>
+        <srai> <star index="6"/> between <star index="8"/> and <star index="9"/> </srai>
+        <srai> brand is <star index="10"/> </srai>
+        <srai> category is <star index="12"/> </srai> </template>
+    </category>
+
+<category>
+        <pattern> ^ <set name="which"/> ^ <set name="cols"/> ^ <set name="price"/> ^ between ^ and  ^ <set name="name"/> ^ where category is <set name="category"/> ^ </pattern>
+        <template>
+        <srai>what are the <star index="4"/> in products</srai>
+        <srai> <star index="6"/> between <star index="8"/> and <star index="9"/> </srai>
+        <srai> name is <star index="10"/> </srai>
+        <srai> category is <star index="12"/> </srai> </template>
+    </category>
+
+<category>
+        <pattern> ^ <set name="which"/> ^ <set name="cols"/> ^ <set name="price"/> ^ between ^ and  ^ rating ^ <set name="rating"/> ^ where category is <set name="category"/> ^ </pattern>
+        <template>
+        <srai>what are the <star index="4"/> in products</srai>
+        <srai> <star index="6"/> between <star index="8"/> and <star index="9"/> </srai>
+        <srai> rating is <star index="11"/> </srai>
+        <srai> category is <star index="13"/> </srai> </template>
+    </category>
 
 </aiml>

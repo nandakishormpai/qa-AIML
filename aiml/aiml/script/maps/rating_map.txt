@@ -9,3 +9,5 @@ nice:5
 2:No rating available
 3:No rating available
 bad:No rating available
+No rating available:No rating available
+5:5

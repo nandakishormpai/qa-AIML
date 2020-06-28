@@ -3,9 +3,9 @@
 
 
 <category>
-    <pattern>rating is ^</pattern>
+    <pattern>rating is ^ </pattern>
     <template>
-    ,where product rating is <star/>
+    ,where product rating is <map name="rating_map"> <star/> </map>
     </template>
 </category>
 
@@ -83,13 +83,6 @@
 <!--  -->
 
 
-<category>
-    <pattern>what rating  ^</pattern>
-    <template>
-    what is the product rating <star/>
-    </template>
-
-</category>
 
 
 
