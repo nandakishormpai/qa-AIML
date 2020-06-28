@@ -1,4 +1,4 @@
-// categories are jsut added to test the AIML and not related to the product mentioned.categories will be correct in the query in actual script//
+// categories are just added to test the AIML and not related to the product mentioned.categories will be correct in the query in actual script//
 // our dataset contains only '5' and 'No rating available' as values of product rating, so i had to map 1,2,3,4 ratings as No rating Available//
 
 Q1 : i need names of tools for gardening and hardware with a rating of 4 star rating where category is pet_supplies_toys
