@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jun 15 22:27:13 2020
-
-@author: abhijithneilabraham
+Created on Jun 28 Sun
+@author: nandakishormpai2001
 """
 
 from programy.clients.embed.basic import EmbeddedDataFileBot
